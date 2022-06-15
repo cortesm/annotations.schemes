@@ -1,0 +1,88 @@
+{
+	"id": "person,1",
+	"name": "Person",
+	"description": "Scheme for person life",
+	"Properties": [
+		{
+			"id": "person.name",
+			"name": "Name",
+			"category": "Personal Data",
+			"type": "String",
+			"unique": true,
+			"required": true
+		},
+		{
+			"id": "person.surname.first",
+			"name": "First Surname",
+			"category": "Personal Data",
+			"type": "String",
+			"unique": true,
+			"required": true
+		},
+		{
+			"id": "person.surname.second",
+			"name": "Second Surname",
+			"category": "Personal Data",
+			"type": "String"
+			"unique": true,
+			"required": false
+		},
+		{
+			"id": "person.surname.alias",
+			"name": "Alias",
+			"category": "Personal Data",
+			"type": "String",
+			"unique": true,
+			"required": true
+		},
+	],
+	"events": [
+		{
+			"id": "person.birth",
+			"name": "Birth",
+			"date": {
+				"id": "person.birth.date",
+				"name": "Birth Date",
+				"type": "Date"
+			},
+			"location": {
+				"id": "person.birth.location"
+				""
+			}
+		}
+	
+	
+	
+		
+		{
+			"id": "person.birth.Location",
+			"name": "Birth Location",
+			"type": "Location"
+		},
+		{
+			"id": "person.birth.date",
+			"name": "Birth Date",
+			"type": "Date"
+		}
+	]
+	"relations": [
+	
+	]
+	"groups": [
+		{
+			
+		}
+	]
+}
+
+
+        "extends": "dtmi:com:example:Room;1",
+
+
+{
+    "@type": "Relationship",
+    "name": "floor",
+    "minMultiplicity": 0,
+    "maxMultiplicity": 1,
+    "target": "dtmi:com:example:Floor;1"
+}

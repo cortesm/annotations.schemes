@@ -1,0 +1,57 @@
+{
+	"id": "person,1",
+	"name": "Person",
+	"description": "Scheme for person life",
+
+	"events": [
+		{
+			"id": "person.birth",
+			"name": "Birth",
+			"duration": [{
+				"id": "person.birth.date",
+				"name": "Birth Date",
+				"type": "Date"
+			}
+			]
+			,
+			"location": {
+				"id": "person.birth.location"
+				""
+			}
+		}
+	
+	
+	
+		
+		{
+			"id": "person.birth.Location",
+			"name": "Birth Location",
+			"type": "Location"
+		},
+		{
+			"id": "person.birth.date",
+			"name": "Birth Date",
+			"type": "Date"
+		}
+	]
+	"relations": [
+	
+	]
+	"groups": [
+		{
+			
+		}
+	]
+}
+
+
+        "extends": "dtmi:com:example:Room;1",
+
+
+{
+    "@type": "Relationship",
+    "name": "floor",
+    "minMultiplicity": 0,
+    "maxMultiplicity": 1,
+    "target": "dtmi:com:example:Floor;1"
+}
