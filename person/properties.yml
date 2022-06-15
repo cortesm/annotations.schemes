@@ -1,25 +1,24 @@
 ---
+id: person.name.full
+name: Full Name
+fields:
 - id: person.name
   name: Name
-  category: Personal Data
   type: String
   unique: true
   required: true
 - id: person.surname.first
   name: First Surname
-  category: Personal Data
   type: String
   unique: true
   required: true
 - id: person.surname.second
   name: Second Surname
-  category: Personal Data
   type: String
   unique: true
   required: false
 - id: person.surname.alias
   name: Alias
-  category: Personal Data
   type: String
   unique: false
-  required: true
+  required: false
